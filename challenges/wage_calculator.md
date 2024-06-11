@@ -1,6 +1,6 @@
 # Challenge: Annual Wage Calculator
 
-Description: Write a Python 3 program called wage_calculator.py that accepts user input from the keyboard for the hours worked and hourly wage. The program calculates the total wages for the year, assuming the person works 350 days per year and 12% taxes are deducted from the wages.
+#Description#: Write a Python 3 program called wage_calculator.py that accepts user input from the keyboard for the hours worked and hourly wage. The program calculates the total wages for the year, assuming the person works 350 days per year and 12% taxes are deducted from the wages.
 
 Purpose: Provide experience with writing an interactive Python program that accepts input, performs a calculation, then displays the result as output.
 
