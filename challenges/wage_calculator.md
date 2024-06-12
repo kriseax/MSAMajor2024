@@ -21,3 +21,6 @@ Your program needs to:
   - tax amount
   - annual wages after taxes
   - money values should be printed with a $ sign and all numbers should be rounded to 2 decimal places
+ 
+## Sample Output
+![Output](wage_calculator_output.png)
