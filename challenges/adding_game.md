@@ -18,7 +18,7 @@ Your program should meet the following requirements:
 - The program should ultimately output the user’s score and the percentage (formatted to 2 decimal places) correct.
 - End the program
 - **You must write at least 2 functions in your program**. Consider writing the following functions
-   -  fucntion to get the game level from the user
+   -  function to get the game level from the user
    -  fucntion to get the number of questions
 
 ## Sample Output
