@@ -22,6 +22,15 @@ def main():
     print(f"Auto1 is {auto1.get_age()} years old")
     print(f"Auto2 is {auto2.get_age()} years old")
 
+    #create a list of automobiles
+    automobile_list = []
+    automobile_list.append(auto1)
+    automobile_list.append(auto2)
+
+    print("\nGetting Automobiles from a list\n-------------------")
+    for auto in automobile_list:
+        auto.print_info()
+
     
     
 main()
