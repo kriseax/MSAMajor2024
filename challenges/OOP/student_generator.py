@@ -1,9 +1,29 @@
 import Student
+from datetime import datetime
+"""
+Function to write error log file
+Input: error message
+Output: none
+"""
+def write_to_error_log(error_message):
+    try:
+        #open log file
+        log_file = open("error_log.txt", "a")
+
+        #write error message to log file
+        log_file.write(f"{datetime.now()}: {error_message}\n")
+
+        #close log file
+        log_file.close()
+    except Exception as err:
+        print(err)
+
+    return
+
 
 def load_students(file_name):
     list_of_students = []
 
-    
     #create a file handler
     file = open(file_name, "r")
 
@@ -25,7 +45,7 @@ def load_students(file_name):
             if len(student_data) != 6:
                 raise Exception(f"There is an error in your data file on line {line_number}")
         except Exception as err:
-            print(str(err))
+            write_to_error_log(str(err))
             continue
 
         #get student data and create a student object for each student
@@ -37,7 +57,7 @@ def load_students(file_name):
             gpa = float(student_data[4])
             student_id = student_data[5].strip()
         except:
-            print(f"Error: {err} on line {line_number}")
+            write_to_error_log(f"Error: {err} on line {line_number}")
             continue
 
         new_student = Student.Student(first_name, last_name, major, credit_hours, gpa, student_id)
