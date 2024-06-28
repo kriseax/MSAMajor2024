@@ -19,6 +19,8 @@ gradebook = [[61, 74, 69, 62, 72, 66, 73, 65, 60, 63, 69, 63, 62, 61, 64],
 ## Requirements
 Write python code that prints the average score for each assignment, and the average score for each student
 
+**You cannot use list methods for sum() or avg()**
+
 ## Sample Output
 
 ```
